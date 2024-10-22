@@ -17,8 +17,24 @@
     <!-- Bootstrap core CSS -->
     <!--link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="dist/css/app.css" rel="stylesheet"-->
-
-    <style>
+  </head>
+  <body class="d-flex flex-column h-100 fixed-top">
+    <header class="header">
+      <img class="py-4" src="https://www.druni.es/media/wysiwyg/logoStore/logo.svg" alt="Logo">
+      <!-- Puedes agregar aquí cualquier otro contenido del encabezado si es necesario -->
+    </header>
+    <div class="d-flex flex-column h-100 fixed-top">
+<div class="d-flex flex-column h-100 fixed-top">
+<div class="flex-shrink-0">
+<div class="container">
+<div id="lexcontainer" style="padding-top: 10%;"></div>
+</div>
+</div>
+<footer class="footer mt-auto py-3">
+<div class="container"><span class="text-muted">Druni</span></div>
+</footer></div>
+</div>
+<style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -26,7 +42,7 @@
         -moz-user-select: none;
         user-select: none;
       }
-
+ 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -39,37 +55,19 @@
         align-items: center;
         padding: 0 20px;
       }
-  
+ 
       .header img {
         width: auto;
         height: 85%; /* Ajusta la altura de la imagen al alto del encabezado */
       }
-  
+ 
       .footer {
         background-color: #000;
         color: white;
         padding: 10px 0;
         height: 80px;
       }
-    </style>
-  </head>
-  <body class="d-flex flex-column h-100 fixed-top">
-    <header class="header">
-      <img class="py-4" src="https://www.druni.es/media/wysiwyg/logoStore/logo.svg" alt="Logo">
-      <!-- Puedes agregar aquí cualquier otro contenido del encabezado si es necesario -->
-    </header>
-    <main class="flex-shrink-0">
-      <div class="container">
-        <div id="lexcontainer" style="padding-top: 10%;">
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer mt-auto py-3">
-      <div class="container">
-        <span class="text-muted">Druni</span>
-      </div>
-    </footer>
+</style>
     <script type="text/javascript">  
     (function() {
       console.log('init component');
