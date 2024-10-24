@@ -49,22 +49,23 @@
     </div>
 </div>
 <script type="text/javascript">
-	    document.addEventListener("DOMContentLoaded", function() {
-		    $Lightning.use("c:embeddedCaseFormWebApp",    // name of the Lightning app
-              function() {  
-                console.log('add component.');                
-                  $Lightning.createComponent(
-                      "c:embeddedCaseFormWeb", // top-level component of your app
-                      { },                  // attributes to set on the component when created
-                      "lexcontainer",   // the DOM location to insert the component
-                      function(cmp) { 
-                          console.log('initialized.');// callback when component is created and active on the page
-                      }
-                  );
-              },
-      'https://druni.my.salesforce-sites.com/casoWeb'  // Experience Cloud site endpoint
-          );
-	});
+	    (function() {
+      console.log('init component');
+        $Lightning.use("c:embeddedCaseFormWebApp",    // nombre de la aplicación Lightning
+            function() {  
+                console.log('Agregar componente.');                
+                $Lightning.createComponent(
+                    "c:embeddedCaseFormWeb", // componente de nivel superior de tu aplicación
+                    {},                     // atributos a establecer en el componente cuando se crea
+                    "lexcontainer",         // la ubicación del DOM para insertar el componente
+                    function(cmp) { 
+                        console.log('Inicializado.'); // callback cuando el componente está activo
+                    }
+                );
+            },
+            'https://druni.my.salesforce-sites.com/casoWeb'  // endpoint de Experience Cloud
+        );
+    })();
       </script>
 </head>
 </html>
